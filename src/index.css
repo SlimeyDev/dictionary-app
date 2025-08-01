@@ -102,3 +102,26 @@ button:active {
   border: 3px solid #2a83ff;
   margin-top: 1rem;
 }
+
+footer a {
+  color: #3498db;
+  text-decoration: none;
+}
+
+footer p {  
+  margin-bottom: 0.5rem;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #202020;
+  padding: 25px;
+  text-align: center;
+  color: #ffffff;
+}
