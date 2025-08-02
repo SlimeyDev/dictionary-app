@@ -16,20 +16,24 @@ function App() {
       const pronunciation = data[0].phonetics[0]?.text || "Not available";
       
       setResult({
+        Error: false,
         word: data[0].word,
         meaning,
         example,
         pronunciation
       });
     } else {
-      setResult(null);
-      alert("Word not found");
+      setResult({
+        Error: true,
+        word: word
+      });
+      //alert("Word not found");
     }
   }
 
   const handleKeyDown = (event) => {
     if (event.key == "Enter") {
-      searchWord(word)
+      searchWord()
     }
   }
 

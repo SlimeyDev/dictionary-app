@@ -125,3 +125,11 @@ footer {
   text-align: center;
   color: #ffffff;
 }
+
+.error-card img {
+  height: 300px;
+}
+
+.error-card {
+  text-align: center;
+}
