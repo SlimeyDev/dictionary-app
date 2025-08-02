@@ -12,9 +12,8 @@ body {
 }
 
 #root {
-  max-width: 800px;
   margin: 0 auto;
-  padding: 2rem;
+  padding-top: 5em;
 }
 
 h1 {
@@ -71,6 +70,8 @@ button:active {
   margin-top: 2rem;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   border: 5px solid #ffffff;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 .word-card h2 {
@@ -127,7 +128,7 @@ footer {
 }
 
 .error-card img {
-  height: 300px;
+  height: 200px;
 }
 
 .error-card {

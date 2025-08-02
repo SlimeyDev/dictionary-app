@@ -37,7 +37,7 @@ function App() {
     }
   }
 
-  return (
+  return(
     <div>
       <h1>Dictionary</h1>
       <div className="search-container">
