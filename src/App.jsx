@@ -27,11 +27,23 @@ function App() {
     }
   }
 
+  const handleKeyDown = (event) => {
+    if (event.key == "Enter") {
+      searchWord(word)
+    }
+  }
+
   return (
     <div>
       <h1>Dictionary</h1>
       <div className="search-container">
-        <input type="text" value={word} onChange={e => setWord(e.target.value)} placeholder="Enter a word..."/>
+        <input 
+        type="text" 
+        value={word} 
+        onChange={e => setWord(e.target.value)} 
+        placeholder="Enter a word..."
+        onKeyDown={handleKeyDown}
+        />
         <button onClick={searchWord}>Search</button>
       </div>
 
